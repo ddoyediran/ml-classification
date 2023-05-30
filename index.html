@@ -9,9 +9,29 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <h1>TensorFlow.js Linear Regression using single neuron</h1>
+    <h1>TensorFlow.js MNIST classifier</h1>
 
-    <p id="status">See console for output</p>
+    <p id="status">See console for even more output</p>
+
+    <section class="box">
+      <h2>Input Image</h2>
+      <p>
+        Inout image is a 28x28 pixel greyscale image from MNIST dataset - a real
+        hand drawn digit!
+      </p>
+
+      <canvas id="canvas" width="28" height="28"></canvas>
+    </section>
+
+    <section class="box">
+      <h2>Prediction</h2>
+      <p>
+        Below you see what number the trained TensorFlow.js model has predicted
+        from input image.
+      </p>
+      <p>Red is a wrong prediction, Green is correct one.</p>
+      <p id="prediction">Training model. Please wait...</p>
+    </section>
 
     <!-- Import TensorFlow.js library -->
     <script
